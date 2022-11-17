@@ -1,0 +1,233 @@
+@font-face {
+    font-family: Binance PLEX;      /*In this case I have downloaded Binance Plex font */
+    src: url(BinancePlex-Regular.ttf);
+  }
+
+*{
+    font-family:Binance PLEX;
+    padding:0;
+    margin:0; 
+    box-sizing:border
+}
+
+.preload{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100vh; 
+    background-color: black;
+    z-index: 100;
+    transition: opacity 0.9s ease;
+  
+
+}
+
+.monster{
+    width:30%;
+    position: absolute;
+    top:35%;
+    left:35%;
+    animation: monster 1s infinite alternate;
+
+}
+
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes monster{
+    from{
+        transform : translateY(0px);
+    }
+    to{
+        transform: translateY(80px);
+    }
+}
+
+
+.hero_section{
+    position: relative;
+}
+.hero_text{
+    position: absolute;
+    top:35%;
+    left: 20%;
+    font-size: 30px;
+    color:#c4251e
+    
+    
+    
+}
+
+ .hero_image{
+     width:100%;
+     opacity: 0.4;
+     aspect-ratio: 1/1;
+     
+
+ }
+
+ button{
+   padding:5%;
+   background-color:#c4251e;
+   border-radius: 50px;
+   color:white;
+   cursor: pointer;
+   border:none
+
+ }
+
+button:hover{
+background-color: black;
+color:white
+
+}
+
+.menu_icon {
+       width:100px;
+       color: white;
+       cursor: pointer;
+       position:absolute;
+       top:2%;
+       right: 0;
+         }
+
+  
+  /*for making first line of menu-icon*/
+  .line1, .line2, .line3{
+    width: 30px;
+   
+    padding:2px;
+    border-top: 8px solid #c4251e;;
+    
+   }
+
+   .about{
+    
+    /*background-color: #F4EFFE;*/
+    width: 100%;
+    height:500px;
+    padding:5%;
+   
+}
+
+ 
+
+   /*.token_economy{
+   
+    width:100%;
+    margin-left:auto;
+    margin-right: auto;
+    
+   
+   
+
+   }*/
+
+ 
+  
+
+   .shell_cover{
+       margin-left: 10%;
+       animation: shelltop 1s infinite alternate;
+       aspect-ratio: 1.5/1;
+   }
+
+
+
+   @keyframes shelltop {
+    from{
+        transform : translateY(0px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+    
+   }
+
+   .text{
+    padding:5%;
+    vertical-align: top;
+}
+
+   .rocket{
+    margin-bottom: 12%;
+   }
+   
+
+   .blockchain{
+      background-color: #E9DFFC;
+   }
+
+   .aboutus_text{
+    display: block;
+    
+    /*margin-left:auto;*/
+    
+   }
+
+
+   .bitcoin{
+    width:45%;
+    margin-left:2%;
+    display: inline;
+   }
+
+   .gameplays{
+    margin: 5%;
+    display:block;
+   
+    
+    
+   }
+   .card{
+    box-shadow: 0 8px 16px 0  rgba(21, 71, 104);
+   }
+
+   .interactive{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+    background-color: white;
+   }
+
+   .game_content{
+    margin-left: 25%;
+    margin-right: auto;
+    
+    display: block;
+   }
+
+
+   @media screen and (min-width: 720px) {
+    .hero_image{
+        aspect-ratio: 3/1;
+    }
+    
+    .aboutus_text {
+      display: inline-block;
+      width:22%;
+    }
+
+    .gameplays{
+        display: flex;
+       
+    }
+    
+    .card{
+       width:30%;
+    }
+ }
+  
+ /*@media screen and (min-width: 500px) {
+    .aboutus_text {
+      display: inline-block;
+      width:22%;
+    }
+   /* .card{
+       height:400px;
+    }
+ }*/
+  
